@@ -10,17 +10,6 @@ import { ImageCropDialogComponent } from 'src/components/image-crop-dialog/image
 export class AppComponent {
   title = 'angular-image-crop';
   croppedImage: any = '';
-  click_link: string = '';
-  directions: AnimationDirectionType[] = [
-    {
-      id: "l-to-r",
-      name: "left to right",
-    }, {
-      id: "l-to-r",
-      name: "right to left",
-    }
-  ];
-  selectedDirection: AnimationDirectionType = this.directions[0];
 
   constructor(public dialog: MatDialog) {}
   
