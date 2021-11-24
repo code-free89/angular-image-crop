@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="text-right">
+    <image-cropper
+      [imageChangedEvent]="data.changeEvent"
+      [maintainAspectRatio]="true"
+      [aspectRatio]="4 / 4"
+      [resizeToWidth]="128"
+      format="png"
+      (imageCropped)="imageCropped($event)"
+      (imageLoaded)="imageLoaded()"
+      (cropperReady)="cropperReady()"
+      (loadImageFailed)="loadImageFailed()"
+    ></image-cropper>
+
+    <button mat-raised-button color="primary" (click)="cropImageClick()">Crop</button>
+  </div>
+</div>
